@@ -36,6 +36,7 @@ Pickup: 0
 ## Annotated output
 
 Green boxes show cars classified as sedans. Orange boxes show other passenger-car body types. Blue boxes show buses, trucks, and motorcycles.
+
 ![Annotated output](runs/detect/sedan3/result.png)
 
 
@@ -43,35 +44,56 @@ Green boxes show cars classified as sedans. Orange boxes show other passenger-ca
 
 Python 3.12 was used for this project.
 
-Create a virtual environment: `python -m venv .venv`
-Activate it on Windows Command Prompt: `.venv\Scripts\activate`
-On macOS or Linux: `source .venv/bin/activate`
-Install the required packages: `pip install -r requirements.txt`
+Create a virtual environment: 
+
+`python -m venv .venv`
+
+Activate it on Windows Command Prompt: 
+
+`.venv\Scripts\activate`
+
+On macOS or Linux: 
+
+`source .venv/bin/activate`
+
+Install the required packages: 
+
+`pip install -r requirements.txt`
 
 ## Run
 
 I tested three different detection methods. Each script can be run separately.
 
-[STEP 1] Basic YOLO detection: `python src/detect1.py`
-[STEP 2] YOLO detection using SAHI: `python src/sahi2.py`
-[STEP 3] Vehicle detection and sedan classification: `python src/sedan3.py`
+1. Basic YOLO detection: 
 
-To generate the final result, run: `python src/sedan3.py`
-The annotated image will be saved to: `runs/detect/sedan3/result.png`
+`python src/detect1.py`
+
+2. YOLO detection using SAHI: 
+
+`python src/sahi2.py`
+
+3. Vehicle detection and sedan classification: 
+
+`python src/sedan3.py`
+
+To generate the final result, run: 
+
+`python src/sedan3.py`
+
+The annotated image will be saved to: 
+
+`runs/detect/sedan3/result.png`
 
 The models are downloaded on the first run, so an internet connection is required.
 
 
 ## Method
 
-[STEP 1] 
-I first tested YOLO11m on the whole image. It detected 32 cars but missed some small cars in the background.
+1. I first tested YOLO11m on the whole image. It detected 32 cars but missed some small cars in the background.
 
-[STEP 2] 
-Next, I used SAHI to divide the image into smaller overlapping sections. The number of detected cars increased from 32 to 40.
+2. Next, I used SAHI to divide the image into smaller overlapping sections. The number of detected cars increased from 32 to 40.
 
-[STEP 3] 
-Finally, each detected car was cropped and classified using an EfficientNetV2-S car body classifier. The open-wheel category was excluded because there are no open-wheel racing cars in this street image.
+3. Finally, each detected car was cropped and classified using an EfficientNetV2-S car body classifier. The open-wheel category was excluded because there are no open-wheel racing cars in this street image.
 
 ## Models and tools
 
