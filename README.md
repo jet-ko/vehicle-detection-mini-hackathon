@@ -33,7 +33,7 @@ Hatchback: 1
 Pickup: 0  
 
 
-## Annotated output
+## Detection result
 
 Green boxes show cars classified as sedans. Orange boxes show other passenger-car body types. Blue boxes show buses, trucks, and motorcycles.
 
