@@ -45,17 +45,17 @@ Green boxes show cars classified as sedans. Orange boxes show other passenger-ca
 
 Python 3.12 was used for this project.
 
-Create a virtual environment: 
-`python -m venv .venv`
+- Create a virtual environment: 
+  `python -m venv .venv`
 
-Activate it on Windows Command Prompt: 
-`.venv\Scripts\activate`
+- Activate it on Windows Command Prompt: 
+  `.venv\Scripts\activate`
 
-On macOS or Linux: 
-`source .venv/bin/activate`
+- On macOS or Linux: 
+  `source .venv/bin/activate`
 
-Install the required packages: 
-`pip install -r requirements.txt`
+- Install the required packages: 
+  `pip install -r requirements.txt`
 
 
 ## Run
