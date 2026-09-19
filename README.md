@@ -37,6 +37,7 @@ Pickup: 0
 
 Green boxes show cars classified as sedans. Orange boxes show other passenger-car body types. Blue boxes show buses, trucks, and motorcycles.
 
+
 ![Annotated output](runs/detect/sedan3/result.png)
 
 
@@ -45,43 +46,35 @@ Green boxes show cars classified as sedans. Orange boxes show other passenger-ca
 Python 3.12 was used for this project.
 
 Create a virtual environment: 
-
 `python -m venv .venv`
 
 Activate it on Windows Command Prompt: 
-
 `.venv\Scripts\activate`
 
 On macOS or Linux: 
-
 `source .venv/bin/activate`
 
 Install the required packages: 
-
 `pip install -r requirements.txt`
+
 
 ## Run
 
 I tested three different detection methods. Each script can be run separately.
 
 1. Basic YOLO detection: 
-
-`python src/detect1.py`
+   `python src/detect1.py`
 
 2. YOLO detection using SAHI: 
-
-`python src/sahi2.py`
+   `python src/sahi2.py`
 
 3. Vehicle detection and sedan classification: 
-
-`python src/sedan3.py`
+   `python src/sedan3.py`
 
 To generate the final result, run: 
-
 `python src/sedan3.py`
 
 The annotated image will be saved to: 
-
 `runs/detect/sedan3/result.png`
 
 The models are downloaded on the first run, so an internet connection is required.
