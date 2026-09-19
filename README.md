@@ -72,9 +72,11 @@ I tested three different detection methods. Each script can be run separately.
    `python src/sedan3.py`
 
 To generate the final result, run: 
+
 `python src/sedan3.py`
 
 The annotated image will be saved to: 
+
 `runs/detect/sedan3/result.png`
 
 The models are downloaded on the first run, so an internet connection is required.
