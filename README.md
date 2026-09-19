@@ -99,7 +99,7 @@ The models are downloaded on the first run, so an internet connection is require
 
 ## Limitations
 
-Small or partly hidden vehicles may be missed. Similar body types, especially sedans and hatchbacks, can also be confused. Therefore, the sedan count is an estimate and may not be exact.
+Small or partly hidden vehicles may be missed. The model may confuse similar body types, such as sedans and hatchbacks. Therefore, the sedan count is an estimate and may not be exact.
 
 
 ## AI assistance
